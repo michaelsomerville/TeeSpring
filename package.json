@@ -1,0 +1,37 @@
+{
+  "name": "TeeSpring",
+  "version": "0.0.0",
+  "description": "\"Building a scraping tool\"",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "~0.8.5",
+    "cheerio": "~0.13.1",
+    "express": "~3.4.8",
+    "hbs": "~2.5.0",
+    "querystring": "~0.2.0",
+    "request": "~2.34.0",
+    "restler": "~3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test Teespring",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himanshuy/TeeSpring"
+  },
+  "keywords": [
+    "scraping",
+    "IMPulse"
+  ],
+  "author": "himanshuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himanshuy/TeeSpring/issues"
+  },
+  "homepage": "https://github.com/himanshuy/TeeSpring",
+  "engines": {
+    "node": "0.10.25"
+  }
+}
