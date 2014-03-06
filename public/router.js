@@ -17,8 +17,6 @@ var Router = Backbone.Router.extend({
 	},
 	getCampaigns: function() {
 		dashboardList.fetch();
-		//var dashboardListView = new DashboardListView({collection: dashboardList});-
-		console.log(JSON.stringify(dashboardList));
 		dashboardListView.render();
 		$('.container').html(dashboardListView.el);
 	}

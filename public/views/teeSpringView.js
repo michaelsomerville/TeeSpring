@@ -33,11 +33,15 @@ var LoginView = Backbone.View.extend({
 });
 
 var DashboardView = Backbone.View.extend({
-	template:_.template('<div>'+
-						'<h3><%= campaignName %></h3>'+
-						'<span><%= orderedAndGoal %>, </span>'+
-						'<span><%= status %>, </span>'+
-						'<span><%= endDate %>, </span>'+
+	template:_.template('<div class="panel panel-default">'+
+						  '<div class="panel-heading">'+
+						    '<h3 class="panel-title"><%= campaignName %></h3>'+
+						  '</div>'+
+						  '<div class="panel-body">'+
+						    '<span>Amount Ordered/Goal: <%= orderedAndGoal %>, </span>'+
+							'<span>Status: <%= status %>, </span>'+
+							'<span>End Date: <%= endDate %> </span>'+
+						 '</div>'+
 						'</div>'),
 	initialize: function() {
 		//this.model.on('change', this.render, this);	
